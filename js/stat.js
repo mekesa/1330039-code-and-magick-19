@@ -43,7 +43,7 @@ window.renderStatistics = function (ctx, names, times) {
     var rectColor = names[i] === 'Вы'
       ? 'rgba(255, 0, 0, 1)'
       : 'hsl(240, 100%, '  + (Math.random() * 100)  + '%)';
-    let height = BAR_HEIGHT * times[i] / maxTime;
+    var height = BAR_HEIGHT * times[i] / maxTime;
 
     ctx.fillStyle = 'black';
     ctx.fillText(names[i], CLOUD_X + GAP + (BAR_WIDTH + BAR_GAP) * i, CLOUD_Y + GAP * 2   + FONT_GAP + BAR_HEIGHT);
